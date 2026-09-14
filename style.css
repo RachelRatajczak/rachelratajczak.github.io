@@ -913,7 +913,6 @@ section {
 }
 
 .project-overview h3 {
-    font-size: 1.1rem;
     font-weight: 700;
     color: var(--primary-dark);
     margin: 2rem 0 1rem;
