@@ -1,4 +1,4 @@
-# Rachel Ratajczak | Health Data Analyst Portfolio
+# Rachel Ratajczak | Health Data Analyst Portfolio 
 
 Welcome to my personal portfolio repository! This site showcases my transition from high-throughput clinical laboratory science and healthcare operations into **Health Data Analytics**, backed by an M.S. in Computer Science and a B.S. in Integrative Biology.
 
