@@ -78,46 +78,50 @@
                 </div>
             </article>
 
-            <!-- Project 2 -->
-            <!-- PCOS Diagnostic Prediction Project Card -->
-            <article class="project-card" style="background: #fff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-    
-            <!-- Optional Project Thumbnail Image -->
-                <div class="project-image" style="margin-bottom: 16px;">
-                  <img src="images/pcos.png" alt="PCOS Machine Learning Model Performance" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 6px; border: 1px solid #e1e4e8;">
+           <!-- Project 2: PCOS Diagnostic Prediction Project Card -->
+            <article class="project-card">
+                <div class="project-visual">
+                    <!-- Fixed image preview with object-fit contain so it doesn't get cut off -->
+                    <div class="project-image" style="background: #f6f8fa; padding: 10px; display: flex; align-items: center; justify-content: center; height: 100%;">
+                        <img src="images/pcos.png" alt="PCOS Machine Learning Model Performance" style="width: 100%; height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
                 </div>
+                <div class="project-details">
+                    <span class="project-category">Machine Learning · R (caret, tidyverse)</span>
+                    <h2>Polycystic Ovary Syndrome (PCOS) Diagnostic Prediction Model</h2>
+                    
+                    <div class="project-overview">
+                        <h3>Challenge</h3>
+                        <p>
+                            Polycystic ovary syndrome affects 6–13% of women of reproductive age, with an estimated 70% of cases remaining undiagnosed. Standard clinical workflows require reliable computational screening tools to improve early risk identification.
+                        </p>
 
-                <div class="project-header" style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                  <h3 style="margin-top: 0; color: #24292e;">Polycystic Ovary Syndrome (PCOS) Diagnostic Prediction Model</h3>
-                  <span style="font-size: 0.85rem; color: #0366d6; background: #f1f8ff; padding: 4px 8px; border-radius: 4px; font-weight: 600;">CSC 532 Machine Learning</span>
+                        <h3>Solution</h3>
+                        <p>
+                            Evaluated and benchmarked multiple binary classification models using 1,000 patient records from Kaggle via 5-fold resampling. Key features analyzed included patient demographics (Age 18–45, BMI 18–35 kg/m²), menstrual irregularity, testosterone levels (20–100 ng/dL), and antral follicle count.
+                        </p>
+
+                        <h3>Impact</h3>
+                        <ul class="impact-list">
+                            <li>Identified Support Vector Machine with a radial basis function kernel (SVM-Radial) as the top performer</li>
+                            <li>Achieved an exceptional mean accuracy of <strong>97%</strong> and a Kappa value of <strong>0.94</strong></li>
+                            <li>Benchmarked comprehensive models including Lasso, Ridge, Random Forest, and Gradient-Boosted Trees</li>
+                        </ul>
+
+                        <div class="project-tags">
+                            <span>R</span>
+                            <span>Machine Learning</span>
+                            <span>Clinical Analytics</span>
+                            <span>SVM</span>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="project-links" style="display: flex; gap: 12px; margin-top: 20px;">
+                            <a href="docs/pcos_ml_report.pdf" class="btn btn-secondary" target="_blank" style="padding: 8px 16px; background: #eaecef; color: #24292e; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">View Full Report (PDF)</a>
+                            <a href="docs/pcos_ml_report.pdf" class="btn btn-primary" download style="padding: 8px 16px; background: #0366d6; color: #fff; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">Download Report PDF</a>
+                        </div>
+                    </div>
                 </div>
-
-                <p style="color: #586069; font-size: 0.95rem; margin-top: 8px;">
-                    <strong>Tech Stack:</strong> R (<code>caret</code>, <code>tidyverse</code>), Exploratory Data Analysis, Predictive Modeling, Clinical Analytics
-                </p>
-
-                <p style="color: #24292e; line-height: 1.5;">
-                      Polycystic ovary syndrome affects 6–13% of women of reproductive age, with an estimated 70% of cases remaining undiagnosed. This machine learning project evaluated and benchmarked multiple binary classification models using 1,000 patient records from Kaggle to improve early screening and risk identification.
-                </p>
-
-                <div style="background: #f6f8fa; padding: 12px 16px; border-radius: 6px; margin: 16px 0;">
-                  <h4 style="margin: 0 0 8px 0; font-size: 0.95rem; color: #24292e;">Key Features Analyzed:</h4>
-                  <ul style="margin: 0; padding-left: 20px; color: #586069; font-size: 0.9rem;">
-                    <li><strong>Patient Demographics & Metrics:</strong> Age (18–45 years), BMI (18–35 kg/m²)</li>
-                    <li><strong>Clinical Indicators:</strong> Menstrual Irregularity (binary), Testosterone Level (20–100 ng/dL), and Antral Follicle Count (5–30 follicles via ultrasound)</li>
-                 </ul>
-                </div>
-
-                <p style="color: #24292e; line-height: 1.5;">
-                  <strong>Results & Findings:</strong> Among all models tested via 5-fold resampling (including Lasso, Ridge, Random Forest, and Gradient-Boosted Trees), the <strong>Support Vector Machine with a radial basis function kernel (SVM-Radial)</strong> emerged as the top performer, achieving an exceptional mean accuracy of <strong>97%</strong> and a Kappa value of <strong>0.94</strong>.
-                 </p>
-
-        <!-- Action Buttons linking to local docs folder -->
-                 <div class="project-links" style="display: flex; gap: 12px; margin-top: 20px;">
-                   <a href="docs/pcos_ml_report.pdf" class="btn btn-secondary" target="_blank" style="padding: 8px 16px; background: #eaecef; color: #24292e; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">View Full Report (PDF)</a>
-                    <a href="docs/pcos_ml_report.pdf" class="btn btn-primary" download style="padding: 8px 16px; background: #0366d6; color: #fff; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">Download Report PDF</a>
-                </div>
-
             </article>
 
             <!-- Project 3 -->
